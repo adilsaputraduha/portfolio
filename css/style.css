@@ -1,3 +1,38 @@
 /* Import fonts from fonts.css */
 
 @import url(./fonts.css);
+
+/* css variable */
+@import url(./partials/_variable.css);
+
+/* Start navbar */
+
+.header-area .main-menu .navbar .navbar-brand {
+  padding: 1 2rem 1 5rem;
+}
+
+.header-area .main-menu .navbar {
+  padding: 1rem 8rem;
+}
+
+.header-area .main-menu .nav-item .nav-link {
+  font: normal 500 15px/2px var(--roboto);
+  text-transform: uppercase;
+  padding: 1rem;
+  color: var(--title-color);
+}
+
+.header-area .main-menu .navbar-nav .active {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header-area .main-menu .navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* End navbar */
