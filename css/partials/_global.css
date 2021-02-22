@@ -1,0 +1,15 @@
+.title-text {
+  font: normal bold 50px/72px var(--roboto);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.button {
+  padding: 8rem 2.2rem;
+  font: normal 16px/20px var(--roboto);
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
