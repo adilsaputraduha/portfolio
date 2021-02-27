@@ -11,6 +11,8 @@ const showMenu = (toggleId, navId) => {
 }
 showMenu('nav-toggle', 'nav-menu');
 
+
+
 // Remove menu mobile
 const navLink = document.querySelectorAll('.nav-link');
 
@@ -19,6 +21,8 @@ function linkAction() {
     navMenu.classList.remove('show-menu');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+
 
 // Scroll section active link
 const sections = document.querySelectorAll('section[id]');
@@ -39,3 +43,23 @@ function scrollActive() {
     });
 }
 window.addEventListener('scroll', scrollActive);
+
+
+
+// Change background header
+function scrollHeader() {
+    const header = document.getElementById('header');
+    if (this.scrollY >= 200) header.classList.add('scroll-header');
+    else header.classList.remove('scroll-header');
+}
+window.addEventListener('scroll', scrollHeader);
+
+
+
+// Show scroll top
+function scrollTop() {
+    const scrollTop = document.getElementById('scroll-top');
+    if (this.scrollY >= 560) scrollTop.classList.add('show-scroll');
+    else scrollTop.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollTop);
