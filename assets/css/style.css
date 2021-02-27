@@ -256,3 +256,38 @@ img {
     visibility: visible;
     bottom: 1.5rem;
 }
+
+/* Home */
+.home {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.home-container {
+    position: relative;
+    height: calc(100vh - var(--header-height));
+    grid-template-rows: repeat(2, max-content);
+    align-content: space-around;
+    row-gap: 2rem;
+}
+
+.home-data {
+    border-left: 4px solid var(--first-color-lighten);
+    color: var(--first-color-lighten);
+    padding-left: 1.5rem;
+    z-index: var(--z-tooltip);
+}
+
+.home-name {
+    font-size: var(--biggest-font-size);
+}
+
+.home-greeting,
+.home-profession {
+    display: block;
+    font-weight: var(--font-bold);
+}
+
+.home-greeting {
+    font-size: .813rem;
+}
