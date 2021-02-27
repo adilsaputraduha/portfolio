@@ -10,7 +10,7 @@
 
 /* Start navbar */
 
-.header-area .main-menu .navbar .navbar-brand {
+.header-area .main-menu .navbar {
   padding: 1 2rem 1 5rem;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .header-area .main-menu .nav-item .nav-link {
-  font: normal 500 15px/2px var(--roboto);
+  font: normal 13px/2px var(--roboto);
   text-transform: uppercase;
   padding: 1rem;
   color: var(--title-color);
