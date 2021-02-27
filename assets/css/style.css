@@ -9,7 +9,7 @@
     --first-color: #3E0E12;
     --first-color-dark: #2F0A0D;
     --text-color: #524748;
-    --first-color-right: #7B6F71;
+    --first-color-light: #7B6F71;
     --first-color-lighten: #FBF9F9;
 
     /* Font and typography */
@@ -193,4 +193,19 @@ img {
 
 .show-menu {
     top: var(--header-height);
+}
+
+/* Active menu */
+.active-link {
+    position: relative;
+}
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -.7rem;
+    left: 0;
+    width: 65%;
+    height: 3px;
+    background-color: var(--first-color-light);
 }
