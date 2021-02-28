@@ -359,7 +359,47 @@ img {
 }
 
 .about-img {
-    justify-content: center;
+    justify-self: center;
     width: 220px;
     border-radius: .5rem;
+}
+
+/* Qualification */
+.qualification-container {
+    row-gap: 2.5rem;
+}
+
+.qualification-title {
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-2);
+    display: flex;
+    align-items: center;
+}
+
+.qualification-title-icon {
+    font-size: 1.5rem;
+    margin-right: var(--mb-1);
+}
+
+.qualification-box {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #CCC;
+}
+
+.qualification-area {
+    font-size: var(--normal-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+    font-weight: var(--font-medium);
+}
+
+.qualification-icon,
+.qualification-work {
+    font-size: var(--smaller-font-size);
+    color: var(--first-color-light);
+}
+
+.qualification-work {
+    display: block;
 }
