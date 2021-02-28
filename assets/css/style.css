@@ -291,3 +291,75 @@ img {
 .home-greeting {
     font-size: .813rem;
 }
+
+.home-profession {
+    font-size: .938rem;
+    margin-bottom: var(--mb-3);
+}
+
+.home-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.home-img img {
+    width: 240px;
+}
+
+.home-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-social-icon {
+    width: max-content;
+    font-size: 1.3rem;
+    margin-bottom: var(--mb-2);
+    color: var(--first-color-lighten);
+}
+
+.home-social-icon:hover {
+    color: var(--first-color-light);
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--first-color-lighten);
+    padding: .75rem 1rem;
+    border-radius: .25rem;
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: var(--first-color-dark);
+}
+
+.button-light {
+    background-color: var(--first-color-light);
+}
+
+/* About */
+.about-data {
+    text-align: center;
+}
+
+.about-description span {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--first-color);
+}
+
+.about-number {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    display: block;
+}
+
+.about-img {
+    justify-content: center;
+    width: 220px;
+    border-radius: .5rem;
+}
