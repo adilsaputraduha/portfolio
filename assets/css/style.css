@@ -350,6 +350,16 @@ img {
     background-color: var(--first-color-lighten);
 }
 
+.button-link {
+    background: none;
+    color: var(--first-color);
+    padding: 0;
+}
+
+.button-link:hover {
+    background: none;
+}
+
 /* About */
 .about-data {
     text-align: center;
@@ -469,4 +479,56 @@ img {
 
 .project-description {
     margin-bottom: var(--mb-4);
+}
+
+/* Portfolio */
+.portfolio-nav {
+    text-align: center;
+    margin-bottom: var(--mb-3);
+}
+
+.portfolio-item {
+    margin: 0 var(--mb-2);
+    cursor: pointer;
+}
+
+.portfolio-content {
+    background-color: #FFF;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+}
+
+.portfolio-img {
+    width: 100%;
+    transition: .4s;
+}
+
+.portfolio-data {
+    padding: 1.5rem;
+}
+
+.portfolio-subtitle {
+    font-size: var(--small-font-size);
+    color: var(--first-color-light);
+}
+
+.portfolio-title {
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    margin: var(--mb-2) 0;
+}
+
+.portfolio-content:hover {
+    box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
+}
+
+.portfolio-content:hover .portfolio-img {
+    transform: scale(1.02);
+}
+
+/* Active menu portfolio */
+.active-portfolio {
+    color: var(--first-color-dark);
+    font-weight: var(--font-semi-bold);
 }
