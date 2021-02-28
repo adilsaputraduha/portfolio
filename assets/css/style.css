@@ -341,6 +341,15 @@ img {
     background-color: var(--first-color-light);
 }
 
+.button-white {
+    background-color: var(--first-color-lighten);
+    color: var(--first-color-dark);
+}
+
+.button-white:hover {
+    background-color: var(--first-color-lighten);
+}
+
 /* About */
 .about-data {
     text-align: center;
@@ -402,4 +411,62 @@ img {
 
 .qualification-work {
     display: block;
+}
+
+/* Services */
+.services-data {
+    padding: 3rem 1rem;
+    background-color: #FFF;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .4s;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+}
+
+.services-icon,
+.services-title {
+    margin-bottom: var(--mb-2);
+    color: var(--first-color);
+}
+
+.services-icon {
+    font-size: 3rem;
+}
+
+.services-title {
+    font-size: var(--h3-font-size);
+}
+
+.services-description {
+    margin-bottom: var(--mb-4);
+}
+
+.services-data:hover {
+    transform: translateY(-.5rem);
+    box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
+}
+
+.project-container {
+    padding: 1.5rem 1rem;
+    background-color: var(--first-color-dark);
+    color: var(--first-color-lighten);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.project-icon,
+.project-title {
+    margin-bottom: var(--mb-1);
+}
+
+.project-icon {
+    font-size: 3.5rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+}
+
+.project-description {
+    margin-bottom: var(--mb-4);
 }
