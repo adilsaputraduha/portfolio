@@ -31,18 +31,18 @@ function scrollActive() {
     const scrollY = window.pageYOffset;
 
     sections.forEach(current => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 50;
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50
         sectionId = current.getAttribute('id');
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link');
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
         } else {
-            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link');
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     });
 }
-window.addEventListener('scroll', scrollActive);
+window.addEventListener('scroll', scrollActive)
 
 
 
@@ -88,3 +88,25 @@ function activePortfolio() {
     }
 }
 linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio));
+
+
+
+// Swiper
+const mySwiper = new Swiper('.testimonial-container', {
+    spaceBetween: 16,
+    loop: true,
+    grabCursor: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    }
+})

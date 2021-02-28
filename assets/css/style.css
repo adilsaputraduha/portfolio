@@ -1,5 +1,5 @@
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto Slab');
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
 
 /* Css variable */
 :root {
@@ -13,7 +13,7 @@
     --first-color-lighten: #FBF9F9;
 
     /* Font and typography */
-    --body-font: 'Roboto Slab';
+    --body-font: 'ABeeZee';
     --biggest-font-size: 2.5rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -531,4 +531,37 @@ img {
 .active-portfolio {
     color: var(--first-color-dark);
     font-weight: var(--font-semi-bold);
+}
+
+/* Testimonial */
+.testimonial-content {
+    display: grid;
+    background-color: var(--first-color-dark);
+    color: var(--first-color-lighten);
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(47, 10, 13, .25);
+}
+
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: var(--mb-1);
+}
+
+.testimonial-client {
+    font-size: var(--small-font-size);
+    color: var(--first-color-light);
+    margin-bottom: var(--mb-2);
+}
+
+.swiper-pagination {
+    position: initial;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
 }
