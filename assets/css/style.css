@@ -279,7 +279,7 @@ img {
 }
 
 .home-name {
-    font-size: var(--biggest-font-size);
+    font-size: 3.5rem;
 }
 
 .home-greeting,
