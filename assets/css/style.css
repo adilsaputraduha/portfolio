@@ -639,3 +639,43 @@ img {
     cursor: pointer;
     border: none;
 }
+
+.footer {
+    background-color: var(--first-color-dark);
+    color: var(--first-color-lighten);
+    text-align: center;
+}
+
+.footer-container {
+    padding: 3rem 0;
+}
+
+.footer-title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-1);
+    font-weight: var(--font-semi-bold);
+}
+
+.footer-description {
+    margin-bottom: var(--mb-3);
+}
+
+.footer-social {
+    margin-bottom: var(--mb-5);
+}
+
+.footer-link {
+    font-size: 1.4rem;
+    color: var(--first-color-lighten);
+    margin: 0 var(--mb-1);
+    transition: .3s;
+}
+
+.footer-link:hover {
+    color: var(--first-color-light);
+}
+
+.footer-copy {
+    font-size: var(--smaller-font-size);
+    color: var(--first-color-light);
+}
