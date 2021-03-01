@@ -110,3 +110,51 @@ const mySwiper = new Swiper('.testimonial-container', {
         },
     }
 })
+
+
+
+// Gsap
+gsap.from('.home-img', {
+    opacity: 0,
+    duration: 2,
+    delay: .5,
+    x: 60
+})
+gsap.from('.home-data', {
+    opacity: 0,
+    duration: 2,
+    delay: .8,
+    y: 25
+})
+gsap.from('.home-greeting, .home-name, .home-profession, .home-button', {
+    opacity: 0,
+    duration: 2,
+    delay: 1,
+    y: 25,
+    ease: 'expo.out',
+    stagger: .2
+})
+gsap.from('.nav-logo, .nav-toggle', {
+    opacity: 0,
+    duration: 2,
+    delay: 1.5,
+    y: 25,
+    ease: 'expo.out',
+    stagger: .2
+})
+gsap.from('.nav-item', {
+    opacity: 0,
+    duration: 2,
+    delay: 1.8,
+    y: 25,
+    ease: 'expo.out',
+    stagger: .2
+})
+gsap.from('.nav-social-icon', {
+    opacity: 0,
+    duration: 2,
+    delay: 2.3,
+    y: 25,
+    ease: 'expo.out',
+    stagger: .2
+})

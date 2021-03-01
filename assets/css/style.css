@@ -679,3 +679,134 @@ img {
     font-size: var(--smaller-font-size);
     color: var(--first-color-light);
 }
+
+/* Media queries */
+@media screen and (min-width:576px) {
+    .home-img img {
+        width: 330px;
+    }
+
+    .about-container,
+    .qualification-container,
+    .services-container,
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-form {
+        width: 450px;
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding-top: 6rem;
+    }
+
+    .section-title {
+        margin-bottom: var(--mb-5);
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-item {
+        margin-left: var(--mb-5);
+        margin-bottom: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .home-container {
+        height: 100vh;
+        grid-template-rows: max-content .5fr;
+        align-content: flex-end;
+    }
+
+    .home-greeting {
+        font-size: 1.25rem;
+    }
+
+    .home-profession {
+        font-size: 2rem;
+    }
+
+    .home-social {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .home-social-icon {
+        margin-right: var(--mb-4);
+        margin-bottom: 0;
+    }
+
+    .home-img img {
+        width: 440px;
+    }
+
+    .about-description {
+        text-align: initial;
+    }
+
+    .about-img {
+        width: 300px;
+    }
+
+    .qualification-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services-container,
+    .portfolio-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-container {
+        padding: 4.5rem 0;
+    }
+
+    .project-data {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .project-icon,
+    .project-title,
+    .project-description {
+        margin-bottom: 0;
+    }
+
+    .project-icon {
+        font-size: 6rem;
+    }
+
+    .project-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .bd-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .qualification-container {
+        column-gap: 6rem;
+    }
+}
